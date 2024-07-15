@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Marketing Agency</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2 class="award-winning">AWARD WINNING</h2>
+        <h1 class="main-title">DIGITAL MARKETING AGENCY</h1>
+        <p class="description">
+          Morbi sed lacus nec risus finibus feugiat at fermentum nibh.
+          Pellentesque vitae ante at elit fringilla ac at purus. Morbi sed lacus
+          nec risus finibus feugiat at fermentum.
+        </p>
+        <button class="contact-button" onclick="openModal()">CONTACT US</button>
+      </div>
+      <div class="hero-image">
+        <img src="./assets/main.png" alt="Digital Marketing" />
+      </div>
+    </section>
+
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <form class="contact-form" id="contactForm">
+          <h2>Talk to us</h2>
+          <label for="email">Work email*</label>
+          <input type="email" id="email" name="email" required />
+          <label for="firstName">First name*</label>
+          <input type="text" id="firstName" name="firstName" required />
+          <label for="lastName">Last name*</label>
+          <input type="text" id="lastName" name="lastName" required />
+          <label class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms" required />
+            I agree to Fyle's terms and conditions, and provide consent to send
+            me communication.
+          </label>
+          <button type="submit" class="submit-button">Contact Us</button>
+        </form>
+        <div class="success-message" id="successMessage">
+          Submit successful!
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p style="color: rgb(203, 55, 55); text-align: center">What we do</p>
+      <h3 class="text-center">Services Provide for You</h3>
+
+      <!-- Slider Section -->
+      <div class="slider">
+        <div class="slider-inner">
+          <div class="slide">
+            <img src="./assets/service-1.png" alt="Image 1" />
+          </div>
+          <div class="slide">
+            <img src="./assets/service-2.png" alt="Image 2" />
+          </div>
+          <div class="slide">
+            <img src="./assets/service-3.png" alt="Image 3" />
+            <div class="overlay">
+              <div class="card bg-danger text-white">
+                <div class="card-body">
+                  <h5 class="card-title">WEB DEVELOPMENT</h5>
+                  <p class="card-text">
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                  </p>
+                  <a
+                    href="https://fylehq.com"
+                    target="_blank"
+                    class="btn btn-light"
+                    >READ MORE</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx-FbwLTAAIp11Y57RJP-AywmLnvyovVx2cw&s"
+              alt="Image 4"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRphSvPTzM3wD2uKPrvGej1-0wLzZOufjDbOw&s"
+              alt="Image 5"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhwI7WOqXEANGSUKxpvbYx7gBDnbPbbY1Sm3qnvOs9lM7Zu-sSn2yarVnnZ6FTPbbu4Ck&usqp=CAU"
+              alt="Image 6"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Dots Navigation -->
+      <div class="dots-container">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div class="container-3">
+      <div class="image-section">
+        <img
+          id="projectImage"
+          src="./assets/container-3.png"
+          alt="Project Image"
+        />
+      </div>
+      <div class="content-section">
+        <h2 style="color: rgb(239, 136, 47)">OUR PROJECT</h2>
+        <p>WHY WE ARE BEST</p>
+        <ul>
+          <li style="color: rgb(54, 224, 38)">Better Strategy & Quality</li>
+          <li style="color: rgb(30, 75, 210)">Global Network</li>
+          <li style="color: black">On-Time Delivery</li>
+        </ul>
+      </div>
+    </div>
+    <div class="last">
+      <div class="card-header">
+        <p style="color: rgb(200, 66, 66)">Expert Growth</p>
+        <h2>OUR COMPANY GROWTH</h2>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-body">
+            ❤️
+            <p>199 +</p>
+
+            <p>Satisfied Customers</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            🏆
+            <p>75+</p>
+            <p>Win Award</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            🕐
+            <p>283+</p>
+            <p>Complete Projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
