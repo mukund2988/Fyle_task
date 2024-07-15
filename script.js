@@ -39,7 +39,7 @@ function showSlides(n) {
   if (n < 0) {
     currentIndex = slides.length - 1;
   }
-  const offset = -currentIndex * 25; // Adjust based on the number of slides visible
+  const offset = -currentIndex * 25;
   document.querySelector(
     ".slider-inner"
   ).style.transform = `translateX(${offset}%)`;
@@ -57,24 +57,24 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSlide((currentIndex += 1));
   }, 3000); // Change image every 3 seconds
 });
-// script.js
+
 const projectImage = document.getElementById("projectImage");
-const contentSection = document.querySelector(".content-section"); // Select the content section
+const contentSection = document.querySelector(".content-section"); 
 
 contentSection.addEventListener("click", (event) => {
-  // Attach click event to the content section
+ 
   if (event.target.tagName === "LI") {
     // Check if clicked element is a list item (LI)
-    const clickedProject = event.target.textContent.trim(); // Get the clicked project name (text content)
+    const clickedProject = event.target.textContent.trim(); 
     switch (clickedProject) {
       case "Better Strategy & Quality":
-        projectImage.src = "./assets/project-3.png"; // Replace with your image URL
+        projectImage.src = "./assets/project-3.png"; 
         break;
       case "Global Network":
-        projectImage.src = "./assets/project-1.png"; // Replace with your image URL
+        projectImage.src = "./assets/project-1.png"; 
         break;
       case "On-Time Delivery":
-        projectImage.src = "./assets/project-2.png"; // Replace with your image URL
+        projectImage.src = "./assets/project-2.png"; 
         break;
     }
   }
